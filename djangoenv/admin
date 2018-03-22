@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="ko" >
+<head>
+<title>로그인 | Django 사이트 관리</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/css/login.css" />
+
+
+
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class=" login"
+  data-admin-utc-offset="32400">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">Django 관리</a></h1>
+
+        </div>
+        
+        
+    </div>
+    <!-- END Header -->
+    
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        
+        
+
+
+
+
+<div id="content-main">
+
+
+
+<form action="/admin/login/?next=/admin/" method="post" id="login-form"><input type='hidden' name='csrfmiddlewaretoken' value='Pqo8eKdkq053Ft5sIRU00wG5Zmjv2crNfEwpIDbhFM2XEDsJwnGcavHFfv9n74Sy' />
+  <div class="form-row">
+    
+    <label class="required" for="id_username">사용자 이름:</label> <input type="text" name="username" maxlength="254" autofocus required id="id_username" />
+  </div>
+  <div class="form-row">
+    
+    <label class="required" for="id_password">비밀번호:</label> <input type="password" name="password" required id="id_password" />
+    <input type="hidden" name="next" value="/admin/" />
+  </div>
+  
+  
+  <div class="submit-row">
+    <label>&nbsp;</label><input type="submit" value="로그인" />
+  </div>
+</form>
+
+</div>
+
+        
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>
